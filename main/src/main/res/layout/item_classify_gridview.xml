@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <com.sxjs.common.widget.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:yc_cornerRadius="10dp"
+        app:yc_dx="0dp"
+        app:yc_dy="0dp"
+        app:yc_shadowColor="#2ab6b6b6"
+        app:yc_shadowLimit="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_show_">
+
+            <TextView
+                android:id="@+id/tv_classList_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="完全圆形圆角"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.sxjs.common.widget.WrapContentGridView
+                android:id="@+id/classify_content_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classList_title"
+                android:listSelector="@color/white"
+                android:numColumns="3"
+                >
+            </com.sxjs.common.widget.WrapContentGridView>
+        </RelativeLayout>
+
+
+    </com.sxjs.common.widget.ShadowLayout>
+
+</RelativeLayout>

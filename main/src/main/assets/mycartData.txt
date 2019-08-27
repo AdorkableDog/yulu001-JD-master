@@ -1,0 +1,200 @@
+﻿{
+    "code": "200",
+    "data": {
+        "proCarts": [
+            {
+                "shopId": 1,
+                "shopImg": "/upload/shop/2018/08/08/5426ddea-869c-413e-b30c-0b1d822ab5bd.png",
+                "shopName": "自营店铺",
+                "shopProArray": [
+                    {
+                        "cartId": 118,
+                        "hide": 0,
+                        "num": 2,
+                        "proId": 250,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/06/1d332859-99b5-4be4-91ca-8d3e165d0314.jpg",
+                        "proName": "自然堂补水保湿套装",
+                        "productId": 250,
+                        "productState": 0,
+                        "skuNum": 7,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 109,
+                        "hide": 0,
+                        "num": 4,
+                        "proId": 258,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/bbdf85a2-0143-47b0-b0ce-f7c09026f99e.jpg",
+                        "proName": "芙丽芳丝紧致夜用眼霜",
+                        "productId": 258,
+                        "productState": 0,
+                        "skuNum": 84,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 108,
+                        "hide": 0,
+                        "num": 1,
+                        "proId": 260,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/9c89599b-362d-487e-9f43-cc1db9fce42a.jpg",
+                        "proName": "w.lab隔离乳",
+                        "productId": 260,
+                        "productState": 0,
+                        "skuNum": 291,
+                        "skuPrice": "0.3",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 103,
+                        "hide": 0,
+                        "num": 12,
+                        "proId": 261,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/13/034f8f51-3db9-4da7-8bfa-d3dc49e060b5.jpg",
+                        "proName": "雅瑞丽补水保湿套装",
+                        "productId": 261,
+                        "productState": 0,
+                        "skuNum": 297,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 108,
+                        "hide": 0,
+                        "num": 1,
+                        "proId": 260,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/9c89599b-362d-487e-9f43-cc1db9fce42a.jpg",
+                        "proName": "w.lab隔离乳",
+                        "productId": 260,
+                        "productState": 0,
+                        "skuNum": 291,
+                        "skuPrice": "0.3",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 108,
+                        "hide": 0,
+                        "num": 1,
+                        "proId": 260,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/9c89599b-362d-487e-9f43-cc1db9fce42a.jpg",
+                        "proName": "w.lab隔离乳",
+                        "productId": 260,
+                        "productState": 0,
+                        "skuNum": 291,
+                        "skuPrice": "0.3",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    }
+                ],
+                "type": 1
+            },
+            {
+                "shopId": 1,
+                "shopImg": "/upload/shop/2018/08/08/5426ddea-869c-413e-b30c-0b1d822ab5bd.png",
+                "shopName": "普通店铺",
+                "shopProArray": [
+                    {
+                        "cartId": 118,
+                        "hide": 0,
+                        "num": 2,
+                        "proId": 250,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/06/1d332859-99b5-4be4-91ca-8d3e165d0314.jpg",
+                        "proName": "自然堂补水保湿套装",
+                        "productId": 250,
+                        "productState": 0,
+                        "skuNum": 7,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 109,
+                        "hide": 0,
+                        "num": 4,
+                        "proId": 258,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/bbdf85a2-0143-47b0-b0ce-f7c09026f99e.jpg",
+                        "proName": "芙丽芳丝紧致夜用眼霜",
+                        "productId": 258,
+                        "productState": 0,
+                        "skuNum": 84,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 108,
+                        "hide": 0,
+                        "num": 1,
+                        "proId": 260,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/07/9c89599b-362d-487e-9f43-cc1db9fce42a.jpg",
+                        "proName": "w.lab隔离乳",
+                        "productId": 260,
+                        "productState": 0,
+                        "skuNum": 291,
+                        "skuPrice": "0.3",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    }
+                ],
+                "type": 1
+            },
+            {
+                "shopId": 1,
+                "shopImg": "/upload/shop/2018/08/08/5426ddea-869c-413e-b30c-0b1d822ab5bd.png",
+                "shopName": "测试店铺",
+                "shopProArray": [
+                    {
+                        "cartId": 118,
+                        "hide": 0,
+                        "num": 2,
+                        "proId": 250,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/06/1d332859-99b5-4be4-91ca-8d3e165d0314.jpg",
+                        "proName": "自然堂补水保湿套装",
+                        "productId": 250,
+                        "productState": 0,
+                        "skuNum": 7,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 118,
+                        "hide": 0,
+                        "num": 2,
+                        "proId": 250,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/06/1d332859-99b5-4be4-91ca-8d3e165d0314.jpg",
+                        "proName": "自然堂补水保湿套装",
+                        "productId": 250,
+                        "productState": 0,
+                        "skuNum": 7,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    },
+                    {
+                        "cartId": 118,
+                        "hide": 0,
+                        "num": 2,
+                        "proId": 250,
+                        "proImg": "https://wjf-imgs.oss-cn-qingdao.aliyuncs.com/upload/head/productImg/2019/08/06/1d332859-99b5-4be4-91ca-8d3e165d0314.jpg",
+                        "proName": "自然堂补水保湿套装",
+                        "productId": 250,
+                        "productState": 0,
+                        "skuNum": 7,
+                        "skuPrice": "0.01",
+                        "skuPropertiesName": "默认",
+                        "type": 2
+                    }
+                ],
+                "type": 1
+            }
+        ]
+    },
+    "msg": "成功"
+}

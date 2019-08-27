@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Terms of Service & Privacy Policy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/3BD69B11-1753-4641-8434-0D6C009988D6/main.js"
+        charset="UTF-8"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        a,
+        img {
+            border: 0;
+        }
+
+        body {
+            font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+        }
+
+        .main_nav {
+            width: 300px;
+            height: 60px;
+            margin: 60px auto 10px auto
+        }
+
+        .main_nav li {
+            float: left;
+            width: 60px;
+            margin-right: 10px;
+            font-size: 16px;
+            padding: .6em 1em;
+
+            border-radius: 3em;
+            background: #2f889a;
+            text-align: center
+        }
+
+        .main_nav li a {
+            color: #fff
+        }
+
+        .cd-user-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 54, 66, 0.9);
+            z-index: 3;
+            overflow-y: auto;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: opacity 0.3s 0, visibility 0 0.3s;
+            -moz-transition: opacity 0.3s 0, visibility 0 0.3s;
+            transition: opacity 0.3s 0, visibility 0 0.3s;
+        }
+
+        .cd-user-modal.is-visible {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: opacity 0.3s 0, visibility 0 0;
+            -moz-transition: opacity 0.3s 0, visibility 0 0;
+            transition: opacity 0.3s 0, visibility 0 0;
+        }
+
+        .cd-user-modal.is-visible .cd-user-modal-container {
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .cd-user-modal-container {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            background: #FFF;
+            margin: 3em auto 4em;
+            cursor: auto;
+            border-radius: 0.25em;
+            -webkit-transform: translateY(-30px);
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -o-transform: translateY(-30px);
+            transform: translateY(-30px);
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        .cd-user-modal-container .cd-switcher:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .cd-user-modal-container .cd-switcher li {
+            width: 50%;
+            float: left;
+            text-align: center;
+        }
+
+        .cd-user-modal-container .cd-switcher li:first-child a {
+            border-radius: .25em 0 0 0;
+        }
+
+        .cd-user-modal-container .cd-switcher li:last-child a {
+            border-radius: 0 .25em 0 0;
+        }
+
+        .cd-user-modal-container .cd-switcher a {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #d2d8d8;
+            color: #809191;
+        }
+
+        .cd-user-modal-container .cd-switcher a.selected {
+            background: #FFF;
+            color: #505260;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .cd-user-modal-container {
+                margin: 4em auto;
+            }
+
+            .cd-user-modal-container .cd-switcher a {
+                height: 70px;
+                line-height: 70px;
+            }
+        }
+
+        .cd-form {
+            padding: 1.4em;
+        }
+
+        .cd-form .fieldset {
+            position: relative;
+            margin: 1.4em 0;
+        }
+
+        .cd-form .fieldset:first-child {
+            margin-top: 0;
+        }
+
+        .cd-form .fieldset:last-child {
+            margin-bottom: 0;
+        }
+
+        .cd-form label {
+            font-size: 16px;
+            font-size: 0.875rem;
+        }
+
+        .cd-form label.image-replace {
+            /* replace text with an icon */
+            display: inline-block;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            bottom: auto;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            height: 20px;
+            width: 20px;
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            color: transparent;
+            text-shadow: none;
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+        }
+
+        .cd-form label.cd-username {
+            background-image: url("../img/cd-icon-username.svg");
+        }
+
+        .cd-form label.cd-email {
+            background-image: url("../img/cd-icon-email.svg");
+        }
+
+        .cd-form label.cd-password {
+            background-image: url("../img/cd-icon-password.svg");
+        }
+
+        .cd-form input {
+            margin: 0;
+            padding: 0;
+            border-radius: 0.25em;
+        }
+
+        .cd-form input.full-width {
+            width: 80%;
+        }
+
+        .cd-form input.full-width2 {
+            width: 94%;
+        }
+
+        .cd-form input.has-padding {
+            padding: 12px 20px 12px 50px;
+        }
+
+        .cd-form input.has-border {
+            border: 1px solid #d2d8d8;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+
+        .cd-form input.has-border:focus {
+            border-color: #343642;
+            box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+            outline: none;
+        }
+
+        .cd-form input.has-error {
+            border: 1px solid #d76666;
+        }
+
+        .cd-form input[type=password] {
+            /* space left for the HIDE button */
+            padding-right: 65px;
+        }
+
+        .cd-form input[type=submit] {
+            padding: 16px 0;
+            cursor: pointer;
+            background: #2f889a;
+            color: #FFF;
+            font-weight: bold;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+
+        .no-touch .cd-form input[type=submit]:hover,
+        .no-touch .cd-form input[type=submit]:focus {
+            background: #3599ae;
+            outline: none;
+        }
+
+
+        @media only screen and (min-width: 600px) {
+            .cd-form {
+                padding: 2em;
+            }
+
+            .cd-form .fieldset {
+                margin: 2em 0;
+            }
+
+            .cd-form .fieldset:first-child {
+                margin-top: 0;
+            }
+
+            .cd-form .fieldset:last-child {
+                margin-bottom: 0;
+            }
+
+            .cd-form input.has-padding {
+                padding: 16px 20px 16px 50px;
+            }
+
+            .cd-form input[type=submit] {
+                padding: 16px 0;
+            }
+        }
+
+
+
+        .cd-close-form {
+            /* form X button on top right */
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 0;
+            top: -40px;
+            background: url("../img/cd-icon-close.svg") no-repeat center center;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @media only screen and (min-width: 1170px) {
+            .cd-close-form {
+                display: none;
+            }
+        }
+
+        #cd-login,
+        #cd-signup,
+        #cd-reset-password {
+            display: none;
+        }
+
+        #cd-login.is-selected,
+        #cd-signup.is-selected,
+        #cd-reset-password.is-selected {
+            display: block;
+        }
+    </style>
+    <base target="_blank" />
+</head>
+
+<body>
+    <div class="cd-form">
+        <div style="text-align:center">
+            <h1>Terms of Service & Privacy Policy</h1>
+        </div>
+        <div class="fieldset" style="text-align: left; word-wrap: break-word; ">
+            Last Modified on February 25, 2019
+            <br />
+            JULIO SALES GROUP LLC TERMS OF USE
+            <br /><br />
+
+            <h3>PLEASE READ THIS AGREEMENT CAREFULLY; THIS IS A BINDING CONTRACT.</h3>
+            Welcome to the www.squareglow.com website (the <strong>“Site”</strong>) and/or the mobile application (the
+            <strong>“App”</strong>). Your
+            access and use of the App, the Site and of features, products and services provided by JULIO SALES GROUP LLC
+            (<strong>“Julio Sales Group,” “we,” “us,” or “our”</strong>) through the Site and/or App (individually and
+            collectively, the
+            <strong>“Service”</strong>) is subject to the terms and conditions in this Terms of Use (this
+            <strong>“ToU”</strong>).
+            You must agree to this ToU in order to use the App, the Site and/or the Service. If you use the App, the
+            Site and/or the Service, or click to accept or agree to this ToU if presented to you in a user interface for
+            the Service, we will understand this as your acceptance of this ToU and your agreement to all of its terms
+            and conditions. By accepting this ToU or using the App, the Site and/or the Service, you represent and
+            warrant that you have the legal capacity to enter a contract in the jurisdiction where you reside. If you do
+            not accept this ToU, then you may not use the App, the Site or the Service.
+
+            <br /><br />
+            <h3>1.ToU Updates. </h3>
+            Julio Sales Group may update this ToU at any time and Julio Sales Group will post the updated version of
+            this ToU on the App and/or the Site. You understand and agree that you will be deemed to have accepted the
+            updated ToU if you use the App, the Site or the Service after the updated ToU is posted on the App and/or
+            the Site. If at any point you do not agree to any portion of this ToU then in effect, you must immediately
+            stop using the App, the Site and the Service.
+            <br /><br />
+
+            <h3>2.Provision of the Service. </h3>
+            You are responsible for any Internet connection and telecommunications fees and charges that you incur when
+            accessing the App, the Site and the Service. You acknowledge and agree that Julio Sales Group may make
+            changes to the App, the Site and/or the Service at any time without notifying you in advance.
+            <br /><br />
+
+            <h3>How and how long we keep your data?</h3>
+            We take reasonable steps to ensure that we securely keep information about you only for so long as is
+            necessary for the purposes for which it was collected, or as required under any contract or by applicable
+            law.
+            <br /><br />
+
+            <h3>3.Termination of Service. </h3>
+            Julio Sales Group reserves the right to deny service to any person or entity at Julio Sales Group’s sole and
+            absolute discretion. You acknowledge and agree that Julio Sales Group may stop providing the App, the Site
+            and/or the Service or restrict your use of the App, the Site and/or the Service at any time, without
+            notifying you in advance, for any reason or no reason, including, without limitation, for any violation of
+            this ToU and/or if Julio Sales Group suspects that you have used any aspect of the Service to conduct any
+            fraudulent or illegal activity. If Julio Sales Group disables your access to your account, you may be
+            prevented from accessing the Service, your account details and/or any materials contained in your account.
+            <br /><br />
+
+            <h3>4.Accounts and Security.</h3>
+            <strong>4.1.</strong> Account. To access certain aspects of the Service, you must have an account. You can
+            create an account by completing the registration process. You may be required to provide information about
+            yourself as part of the registration process or your continued use of the Service. You agree that any
+            registration information that you submit to Julio Sales Group will be correct, accurate and up to date.
+            <br /><br />
+            <strong>4.2.</strong> Fees. You agree to pay all fees and applicable taxes incurred by you or anyone using
+            your account. Unless otherwise noted, all currency references are in U.S. dollars. All fees and charges are
+            payable in accordance with payment terms in effect at the time the fee or the charge becomes payable. Julio
+            Sales Group may, from time to time, modify, amend, or supplement its pricing and billing procedures, and
+            such changes shall be effective immediately upon posting an update of this ToU or posting such changes
+            elsewhere on the App and/or the Site. If there is a dispute regarding your payment of fees, or the Service,
+            Julio Sales Group shall have the right to terminate your account without prior notice. <strong> YOU
+                ACKNOWLEDGE AND AGREE THAT ANY APPLICABLE FEES AND OTHER CHARGES ARE NON-REFUNDABLE IN WHOLE OR IN PART.
+                YOU ARE FULLY LIABLE FOR ALL CHARGES TO YOUR ACCOUNT, INCLUDING ANY UNAUTHORIZED CHARGES.</strong>
+            <br /><br />
+            <strong>4.3.</strong> Account Security. Maintaining account security is very important. You are solely
+            responsible for maintaining the confidentiality of your account password. You agree to notify Julio Sales
+            Group immediately if you become aware of any unauthorized use of your password or of your account.</strong>
+            <br /><br />
+            <strong>4.4.</strong> Account Sharing or Transfers. Accounts are registered to you personally and may not be
+            sold, traded, gifted or otherwise transferred at any time under any circumstances. You may not share your
+            account. You may not disclose your password to anyone else.</strong>
+            <br /><br />
+            <strong>4.5.</strong> Cancellation by You. You have the right to cancel your account at any time. You may
+            cancel your account by clicking the cancel link available on the App and/or the Site. Once you cancel your
+            account, your personal information will no longer be viewable by other users. However, content previously
+            shared with other users may remain viewable by those users until you delete such content.</strong>
+            <br /><br />
+            <strong>4.6.</strong> Termination by Julio Sales Group. Julio Sales Group may at any time terminate your
+            account if:
+            <br />
+            <strong>a.</strong> Julio Sales Group determines that you are (a) in breach of or otherwise acting
+            inconsistently with this ToU or (b) engaging in fraudulent or illegal activities or other conduct that may
+            result in liability to Julio Sales Group;
+            <br />
+            <strong>b.</strong> Julio Sales Group determines it is required by law to terminate your account; or
+            <br />
+            <strong>c.</strong> Julio Sales Group decides to stop providing the Service or critical portions of the
+            Service in the country where you reside, access the App, the Site or use the Service or Julio Sales Group
+            determines that it is no longer in its business interests to continue providing the Service or critical
+            portions of the Service.
+            <br /><br />
+            <strong>4.7.</strong> Effect of Account Termination or Cancellation. You may voluntarily terminate your
+            account at any time through the account interface on the App and/or the Site. Accounts terminated by Julio
+            Sales Group for any type of abuse including, without limitation, a violation of this ToU, may not be
+            reactivated for any reason.</strong>
+            <br /><br />
+
+
+            <h3>5.App Use Requirements.</h3>
+            <strong>5.1.</strong> Installation. To use the service on a mobile application (an “App”), you will be
+            required to install the App on one or more mobile devices that you own or control and that meet the minimum
+            specifications provided by Julio Sales Group.
+            <br /><br />
+            <strong>5.2.</strong> Updates. Julio Sales Group may require that you download and install updates to the
+            App from time to time. You acknowledge and agree that Julio Sales Group may update the App with or without
+            notifying you and add or remove features or functions to the App at any time in its sole discretion. You
+            acknowledge and agree that Julio Sales Group has no obligation to make the App available to you, make any
+            subsequent versions of the App available to you or to continue to support the App in any way. You
+            acknowledge that your access to the App may not be continuous, features may change during your use of the
+            App, and Julio Sales Group may terminate your access to the App or stop offering the App at any time.
+            <br /><br />
+            <strong>5.3.</strong> Agreements. You acknowledge that you may only use the App in connection with the
+            Service provided through the App in accordance with this Agreement. The requirements hereunder and this
+            Agreement may change as the App and/or Service evolve.
+            <br /><br />
+
+            <h3>6.License; Restrictions and Conditions of Use.</h3>
+            <strong>6.1.</strong> License. Subject to the terms and conditions of this Agreement and for the sole
+            purpose of using the Service, Julio Sales Group hereby grants you a limited, non-exclusive, revocable,
+            non-sublicensable, non-transferable license to (i) install the App on one or more mobile devices which are
+            owned by you, are under your control and which meet Julio Sales Group’s minimum specifications; and (ii)
+            view, review and utilize the App and any related information provided to you by Julio Sales Group.
+            <br /><br />
+            <strong>6.2.</strong> Use of the Site. Julio Sales Group permits you to view and use the App and/or the Site
+            solely for your personal, non-commercial use. You agree not to license, create derivative works from,
+            transfer, sell or re-sell any information, content, materials, data or services obtained from the App, the
+            Site or through the Service.
+            <br /><br />
+            <strong>6.3.</strong> Accessing the Service. You agree not to access, or attempt to access, the Service by
+            any means other than through the user interface provided through the App and/or the Site provided by Julio
+            Sales Group. You specifically agree not to access, or attempt to access, the Service through any automated
+            means (including, without limitation, through the use of scripts, bots, spiders or web crawlers).
+            <br /><br />
+            <strong>6.4.</strong> No Violation of Laws. You agree that you will not, in connection with your use of the
+            App, the Site or the Service, violate any applicable law, ordinance, rule, regulation or treaty. Without
+            limiting the foregoing, you agree that you will not make available through the App, the Site and/or the
+            Service any material or information that infringes any copyright, trademark, patent, trade secret, or other
+            right of any party (including rights of privacy or publicity).
+            <br /><br />
+            <strong>6.5.</strong> Use Restrictions. You may not connect to or use the App, the Site or the Service in
+            any way that is not expressly permitted by this ToU.
+            <br />
+            <strong>a.</strong> You may not:
+            <br />
+            <strong>(a)</strong> cause, permit or authorize the modification, creation of derivative
+            works, translation,
+            reverse engineering, decompiling, disassembling or hacking of the Service;
+            <br />
+            <strong>(b)</strong> sell, assign, rent, lease,
+            act as a service bureau, or grant rights in the Service, including, without limitation, through sublicense,
+            to any other person or entity without the prior written consent of Julio Sales Group; or
+            <br />
+            <strong>(c)</strong> make any false,
+            misleading or deceptive statement or representation regarding Julio Sales Group and/or the App, the Site or
+            the Service.
+            <br /> <br />
+            <strong>b.</strong> Without limiting the foregoing, you agree that you will not:
+            <br />
+            <strong>(i)</strong> institute, assist, or
+            become involved in
+            any type of attack including, without limitation, denial of service attacks, upon the App, the Site and/or
+            the Service (or any servers, systems or networks connected to the App, the Site or the Service) or otherwise
+            attempt to obstruct, disrupt or interfere with the operation of the App, the Site and/or the Service or any
+            other person’s or entity’s use of the App, the Site and/or the Service (or any servers, systems or networks
+            connected to the App, the Site or the Service);
+            <br />
+            <strong>(ii)</strong> attempt to gain unauthorized access to the App, the
+            Site, the Service, accounts registered to other users, or any servers, systems or networks connected to the
+            App, the Site and/or the Service;
+            <br />
+            <strong>(iii)</strong> use the App, the Site or the Service for any commercial purpose or
+            the benefit of any third party, or charge any person or entity, or receive any compensation for, the use of
+            the App, the Site or the Service, unless you are specifically authorized to do so in a separate written
+            agreement with Julio Sales Group;
+            <br />
+            <strong>(iv)</strong> use the App, the Site or the Service to (y) develop, generate,
+            transmit or store information that is defamatory, harmful, abusive, obscene or hateful; or (z) perform any
+            unsolicited commercial communication not permitted by applicable law; or (v) engage in any activity that (A)
+            constitutes harassment or a violation of privacy or threatens other people or groups of people; (B) is
+            harmful to children in any manner; (C) constitutes phishing, pharming or impersonates any other person or
+            entity, or steals or assumes any person’s identity (whether a real identity or online nickname or alias); or
+            (D) violates any applicable law, ordinance, rule, regulation or treaty.
+            <br /><br />
+
+            <strong>6.6.</strong> No Data Mining or Harmful Code. You agree that you will not
+            <br />
+            (a) obtain or attempt to obtain any information from the Service including, without limitation, email
+            addresses or mobile phone numbers of other account holders or other software data;
+            <br />
+            (b) intercept, examine or otherwise observe any proprietary communications protocol used by the App, the
+            Site or the Service, whether through the use of a network analyzer, packet sniffer or other device; or
+            <br />
+            (c) use any type of bot, spider, virus, clock, timer, counter, worm, software lock, drop dead device, Trojan
+            horse routing, trap door, time bomb or any other codes, instructions or third party software that is
+            designed to provide a means of surreptitious or unauthorized access to, or distort, delete, damage or
+            disassemble, the App, the Site or the Service.
+            <br /><br />
+
+            <strong>6.7.</strong> Violation of this ToU. You acknowledge and agree that you are solely responsible, and
+            Julio Sales Group has no responsibility or liability to you or any other person or entity, for any breach by
+            you of this ToU or for the consequences of any such breach. Julio Sales Group may at its option, terminate
+            its relationship with you, or may suspend your account immediately if it determines you are using the
+            Service contrary to the restrictions found in this Section 6 or any other terms of this ToU.
+            <br /><br />
+
+            <h3>7.Links. </h3>
+            <strong>7.1.</strong> Links from the App and/or the Site. The App and/or the Site may contain links to
+            websites operated by other parties. Julio Sales Group provides these links to other websites as a
+            convenience and use of these websites is at your own risk. The linked websites are not under the control of
+            Julio Sales Group and Julio Sales Group is not responsible for the content available on the other websites.
+            Such links do not imply Julio Sales Group’s endorsement of information or material on any other website and
+            Julio Sales Group disclaims all liability with regard to your access to and use of such linked websites.
+            <br /><br />
+            <strong>7.2.</strong> Links to the App and/or the Site. Unless otherwise set forth in a written agreement
+            between you and Julio Sales Group, you must adhere to Julio Sales Group’s linking policy as follows: (i) the
+            appearance, position and other aspects of the link may not be such as to damage or dilute the goodwill
+            associated with Julio Sales Group’s and/or its licensors’ names and trademarks; (ii) the appearance,
+            position and other attributes of the link may not create the false appearance that your organization or
+            entity is sponsored by, affiliated with, or associated with Julio Sales Group; and (iii) when selected by a
+            user, the link to the Site must display the Site on full-screen and not within a “frame” on the linking
+            Site. Julio Sales Group reserves the right to revoke its consent to the link at any time and in its sole
+            discretion.
+            <br /><br />
+
+            <h3>8.Intellectual Property.</h3>
+            <strong>8.1.</strong> Trademarks. The Julio Sales Group name and logo are trademarks and service marks of
+            Julio Sales Group. Unless permitted in a separate written agreement with Julio Sales Group, you do not have
+            the right to use any of Julio Sales Group’s trademarks, service marks or logos and your unauthorized use of
+            any of these may be a violation of federal and state trademark laws.
+            <br /><br />
+            <strong>8.2.</strong> Ownership. You acknowledge and agree that Julio Sales Group, or its licensors, owns
+            all right, title and interest in and to the App, the Site and the Service, including all intellectual
+            property, industrial property and proprietary rights recognized anywhere in the world at any time and that
+            the App, the Site and the Service are protected by U.S. and international copyright laws. Further, you
+            acknowledge that the Service may contain information that Julio Sales Group has designated as confidential
+            and you agree not to disclose such information without Julio Sales Group’s prior written consent.
+            <br /><br />
+            <strong>8.3.</strong> Copyright Agent. Julio Sales Group’s respects the intellectual property rights of
+            others, and requires that the people who use the App, the Site and the Service do the same. Julio Sales
+            Group maintains a policy of terminating users of the App, the Site and/or the Service who engage in repeated
+            infringing conduct. If you believe that your work has been copied in a way that constitutes copyright
+            infringement, please forward the following information to the Copyright Agent, designated as such pursuant
+            to the Digital Millennium Copyright Act, 17 U.S.C. § 512(c)(2), named below:
+            <br />
+            <strong>•</strong> Your address, telephone number, and email address;
+            <br />
+            <strong>•</strong> A description of the copyrighted work that you claim has been infringed;
+            <br />
+            <strong>•</strong> A description of where the alleged infringing material is located;
+            <br />
+            <strong>•</strong> A statement by you that you have a good faith belief that the disputed use is not
+            authorized by you, the
+            copyright owner, its agent, or the law;
+            <br />
+            <strong>•</strong> An electronic or physical signature of the person authorized to act on behalf of the
+            owner of the copyright
+            interest; and
+            <br />
+            <strong>•</strong> A statement by you, made under penalty of perjury, that the above information in your
+            notice is accurate
+            and that you are the copyright owner or authorized to act on the copyright owner’s behalf.
+            Copyright Agent: Julio Rodriguez Julio Sales Group LLC. 412 NW 17th Pl Cape Coral, FL 33993 Email:
+            <a href="mailto:julio@juliosalesgroup.com">julio@juliosalesgroup.com</a>
+            <br /><br />
+            <strong>8.4.</strong> Third Party Software and Services. The Service may be incorporated into technology,
+            software and services owned and controlled by third parties. Use of such third-party software or services is
+            subject to the terms and conditions of the applicable third-party license agreements (including, without
+            limitation, terms of use and terms of service posted on third party websites), and you agree to look solely
+            to the applicable third party and not to Julio Sales Group with respect to your rights in relation to such
+            third-party software, technology and/or services.
+            <br /><br />
+
+
+            <h3>9.Social Networks. </h3>
+            The Service includes features that operate in conjunction with certain third-party websites that you visit
+            such as GoDaddy (<strong>“Network Features”</strong>). While your use of the Network Features is governed by
+            this ToU, your
+            access and use of third party social networking websites and the services provided through these websites is
+            governed by the terms of service and other agreements posted on these websites. It is impossible for Julio
+            Sales Group to determine in each case whether your use of the Network Features would cause you to violate or
+            breach the terms of service and/or other agreements posted on these third-party websites. You understand and
+            acknowledge that your use of the Network Features may cause you to violate or breach the terms of service
+            and other agreements posted on these third-party websites which could result in the termination of your
+            account and ability to access these third-party websites and, in some cases, could give rise to liability
+            for damages.<strong> YOU AGREE THAT YOU ALONE ARE RESPONSIBLE FOR YOUR USE OF THE NETWORK FEATURES AND THAT
+                JULIO
+                SALES GROUP WILL NOT BE LIABLE TO YOU OR ANYONE ELSE FOR YOUR VIOLATION OR BREACH OF ANY TERMS OF
+                SERVICE OR
+                OTHER AGREEMENT THAT MAY RESULT FROM YOUR USE OF THE NETWORK FEATURES.</strong>
+            <br /><br />
+
+
+
+            <h3>10.Privacy Policy. </h3>
+            By accepting this ToU or using the App, the Site and/or the Service, you represent that you have read and
+            consent to our Privacy Policy in addition to this ToU. Julio Sales Group may revise the Privacy Policy at
+            any time and the new versions will be posted on the App and/or the Site. If at any point you do not agree to
+            any portion of the Privacy Policy, you must immediately stop using the App, the Site and the Service.
+            <br /><br />
+
+            <h3>11.Location. </h3>
+            The App, the Site and the Service are operated by Julio Sales Group in the United States. If you choose to
+            access the App, the Site and/or the Service from a location outside of the United States, you do so on your
+            own initiative and you are responsible for compliance with applicable local laws.
+            <br /><br />
+
+            <h3>12.Submitted Content. </h3>
+            <strong> 12.1.</strong> Content of Communications. Julio Sales Group is not the source of, does not verify
+            or endorse and takes no responsibility for the content of communications made using the Service. By using
+            the Service, you agree that any content that you submit may be viewable by other users of the App, the Site
+            and/or the Service. The content of communications is entirely the responsibility of the person from whom
+            such content originated. You therefore may be exposed to content that is offensive, unlawful, harmful to
+            minors, obscene, indecent or otherwise objectionable. The content of communications may be protected by
+            intellectual property rights, which are owned by third parties. You are responsible for the content you
+            choose to communicate and access using the Service. In particular, you are responsible for ensuring that you
+            do not submit material that is
+            <br />
+            <strong> (i)</strong> copyrighted, protected by trade secret or otherwise subject to third
+            party proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or
+            have permission from their rightful owner
+            <br />
+            <strong>(ii)</strong> a falsehood or misrepresentation
+            <br />
+            <strong> (iii)</strong> offensive, unlawful,
+            harmful to minors, obscene, defamatory, libelous, threatening, pornographic, harassing, hateful, racially or
+            ethnically offensive, or that encourages conduct that would be considered a criminal offense, gives rise to
+            civil liability, violates any law, or is otherwise objectionable;
+            <br />
+            <strong> (iv)</strong> an advertisement or solicitation of
+            business; or
+            <br />
+            <strong> (v)</strong> impersonating another person. Julio Sales Group may in its sole discretion block,
+            prevent
+            delivery of or otherwise remove the content of communications as part of its effort to protect the Service
+            or its customers, or otherwise enforce the terms of this ToU. Further, Julio Sales Group may in its sole
+            discretion remove such content and/or terminate this ToU and your Account if you use any content that is in
+            breach of this ToU.
+            <br /><br />
+
+            <strong> 12.2.</strong> Julio Sales Group does not claim ownership of any communications or materials you
+            submit or make available through the App, the Site and/or the Service (“Submitted Content”) via Forums,
+            Blogs, email functions, chat functions, video hosting, sharing and/or publishing or any other function on
+            the App, the Site and/or Service which allows you to post, upload, edit, host, share and/or publish
+            content.. With respect to such Submitted Content, you grant Julio Sales Group a perpetual, irrevocable,
+            non-terminable, transferrable, worldwide, royalty-free, sublicensable, fully paid-up, non-exclusive and
+            transferable license to use, reproduce, distribute, prepare derivative works of, display, modify, copy and
+            perform the Submitted Content or any part of such Submitted Content in connection with the Service and Julio
+            Sales Group’s (and its successors’ and affiliates’) business, including without limitation for promoting and
+            redistributing part or all of the Service (and derivative works thereof) in any media formats and through
+            any media channels. You also hereby grant each user of the Service a non-exclusive license to access your
+            Submitted Content through the Service while the Submitted Content is made available through the Service. You
+            may take down any Submitted Content at any time; however, you acknowledge and agree, that Julio Sales Group
+            may still have access to such Submitted Content and that the above licenses granted by you to Julio Sales
+            Group will remain despite your removal of such Submitted Content from the Service. You hereby represent,
+            warrant and covenant that any Submitted Content you provide does not include anything (including, but not
+            limited to, text, images, music or video) to which you do not have the full right to grant the license
+            specified in this Section 12.2.
+            <br /><br />
+
+            <strong> 12.3.</strong> You acknowledge and agree that: (i) by using the App, the Site or Service, you may
+            be exposed to content that you may find offensive or indecent and you do so at your own risk; (ii) you are
+            solely responsible for, and Julio Sales Group has no responsibility to you or any third party for any
+            Submitted Content that you create, submit, post or publish on the App, the Site or Service; (iii) Julio
+            Sales Group does not guarantee any confidentiality with respect to Submitted Content, whether or not they
+            are published (iv) Julio Sales Group is not responsible for any Submitted Content that you may have access
+            to through your use of the App, the Site or Service and all Submitted Content are the responsibility of the
+            person from whom such Submitted Content originated. You acknowledge and agree that (i) Julio Sales Group has
+            no control over and is not responsible for the use of Submitted Content by a user, including any user that
+            has uploaded such Submitted Content to such user’s personal device; and (ii) Julio Sales Group may not be
+            able to remove certain Submitted Content that is uploaded onto another user’s device. Julio Sales Group does
+            not endorse any Submitted Content or any opinion, recommendation, or advice expressed therein, and expressly
+            disclaims any and all liability in connection with Submitted Content.
+            <br /><br />
+
+
+            <strong> 12.4.</strong> You acknowledge that Julio Sales Group has the right to pre-screen any Submitted
+            Content, but no obligation to do so. At Julio Sales Group’s sole discretion, any Submitted Content may be
+            included in the Service in whole or in part in a modified form. In addition, Julio Sales Group and its
+            designees shall have the right (but not the obligation) in their sole discretion to refuse or remove any
+            Submitted Content that is available via the Site and/or the Service that violates this TOU or is otherwise
+            objectionable including, but not limited to, being unlawful, offensive, threatening, libelous, defamatory,
+            pornographic, obscene or violating any party’s intellectual property.
+            <br /><br />
+
+
+            <strong> 12.5.</strong> You acknowledge that the Submitted Content is your sole responsibility. You are
+            entirely responsible for the Submitted Content and agree, under no circumstance, will Julio Sales Group be
+            liable in any way for Submitted Content, including, but not limited to, for any errors or omissions in any
+            Submitted Content, or any loss or damage of any kind incurred as a result of the use or distribution of any
+            Submitted Content transmitted or otherwise made available via the Service.
+            <br /><br />
+
+            <h3>13.Children. </h3> The App, the Site and the Service are not directed toward children under 13 years of
+            age nor does Julio Sales Group knowingly collect information from children under 13 or allow them to create
+            an account or access account features. If you are under 13, please do not submit any personal information
+            about yourself to Julio Sales Group.
+            <br /><br />
+
+
+            <h3>14.DISCLAIMER OF WARRANTIES.</h3>
+
+            <strong> 14.1. YOU UNDERSTAND AND AGREE THAT YOUR USE OF THE APP, THE SITE AND THE SERVICE IS AT
+                YOUR SOLE RISK AND
+                THAT THE APP, THE SITE AND THE SERVICE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT
+                WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong>
+            <br />
+            <strong> 14.2. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, JULIO SALES GROUP EXPRESSLY
+                DISCLAIMS ALL
+                WARRANTIES AND CONDITIONS INCLUDING, WITHOUT LIMITATION, WARRANTIES AND CONDITIONS OF SATISFACTORY
+                QUALITY,
+                MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND THOSE ARISING FROM COURSE OF
+                DEALING OR USAGE OF TRADE.</strong>
+            <br />
+            <strong> 14.3. JULIO SALES GROUP MAKES NO WARRANTY AS TO THE ACCURACY, COMPLETENESS OR RELIABILITY
+                OF ANY MATERIALS,
+                INFORMATION OR DATA AVAILABLE THROUGH, OR THE PERFORMANCE OF, THE APP, THE SITE OR THE SERVICE.</strong>
+            <br />
+            <strong> 14.4.JULIO SALES GROUP DOES NOT REPRESENT OR WARRANT THAT
+                <br />
+                (a) YOU WILL BE ABLE TO ACCESS
+                OR USE THE APP,
+                THE SITE AND/OR THE SERVICE AT THE TIMES OR LOCATIONS OF YOUR CHOOSING;
+                <br />
+                (b) THAT OPERATION OF THE APP, THE
+                SITE OR THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE;
+                <br />
+                (c) YOUR USE OF THE APP, THE SITE
+                OR THE SERVICE WILL MEET YOUR REQUIREMENTS;
+                <br />
+                (d) DEFECTS IN THE OPERATION OF THE APP, THE SITE OR THE SERVICE
+                WILL BE CORRECTED; OR
+                <br />
+                (e) THE APP, THE SITE OR THE SERVICE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</strong>
+            <br />
+            <strong> 14.5. YOU ACKNOWLEDGE AND AGREE THAT ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH
+                THE USE OF THE
+                APP, THE SITE OR THE SERVICE IS AT YOUR OWN RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE
+                TO
+                YOUR COMPUTER, MOBILE PHONE OR OTHER DEIVCE OR ANY LOSS OF DATA RESULTING FROM DOWNLOADING OR OBTAINING
+                SUCH
+                MATERIAL.</strong>
+            <br />
+            Because some states or jurisdictions do not allow the disclaimer of implied warranties, the foregoing
+            disclaimers may not apply to you.
+            <br /> <br />
+
+
+            <h3>15. LIMITATION OF LIABILITY; SOLE AND EXCLUSIVE REMEDY.</h3>
+            <strong>15.1. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, JULIO SALES GROUP, AND ITS AFFILIATES,
+                LICENSORS
+                AND BUSINESS PARTNERS (COLLECTIVELY, THE “RELATED PARTIES”), SHALL NOT BE LIABLE TO YOU, UNDER ANY
+                CONTRACT,
+                TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHER LEGAL OR EQUITABLE THEORY, FOR:
+                <br />
+                a. ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR EXEMPLARY DAMAGES, INCLUDING LOSS OF
+                PROFITS,
+                USE, DATA OR GOODWILL, ARISING OUT OF OR IN ANY WAY CONNECTED WITH ACCESS TO OR USE OF THE APP, THE SITE
+                AND/OR THE SERVICE, EVEN IF JULIO SALES GROUP AND/OR THE RELATED PARTIES HAVE BEEN ADVISED OR SHOULD
+                HAVE
+                BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES OR DAMAGES;
+                <br />
+                b. THE COST OF PROCUREMENT OF SUBSTITUTE GOODS, SERVICES OR TECHNOLOGY; OR
+                <br />
+                c. THE DELETION OF, CORRUPTION OF, OR FAILURE TO STORE ANY MATERIALS, INFORMATION OR DATA MAINTAINED BY
+                OR
+                THROUGH YOUR USE OF THE APP, THE SITE OR THE SERVICE.</strong>
+            <br />
+            <strong> 15.2. WITHOUT LIMITING THE FOREGOING, IN NO CASE SHALL THE LIABILITY OF JULIO SALES GROUP OR ANY OF
+                THE
+                RELATED PARTIES EXCEED ONE HUNDRED DOLLARS ($100).
+                Because some states or jurisdictions do not allow the exclusion or the limitation of liability for
+                consequential or incidental damages, in such states or jurisdictions, the liability of Julio Sales Group
+                and
+                the Related Parties shall be limited to the fullest extent permitted by law.</strong>
+
+            <br /> <br />
+            <h3> 16.Indemnification.</h3>
+            You agree to indemnify, defend and hold Julio Sales Group and the Related
+            Parties
+            harmless from any and all claims, demands, damages or other losses including, without limitation, reasonable
+            attorneys’ fees, resulting from or arising out of (i) your use of the Site and/or the Service or (ii) your
+            breach of this ToU or any other policies that Julio Sales Group may issue for the Site and/or the Service
+            from time to time.
+            <br /> <br />
+
+
+
+
+
+            <h3>17.Governing Law; </h3>
+            Jurisdiction.This ToU is governed by Florida law, without regard to conflict of laws principles. The
+            application of the United Nations Convention on Contracts for the International Sale of Goods is expressly
+            excluded. You and Julio Sales Group agree that, except as otherwise provided in Section 18 below, the state
+            and federal courts located in the County of Lee County, Florida will have exclusive jurisdiction of all
+            disputes arising out of or related to this ToU or your use of the Site or the Service and agree to submit to
+            the personal jurisdiction and venue of these courts. Notwithstanding the foregoing, Julio Sales Group shall
+            be allowed to apply for equitable remedies (including injunctions) in any jurisdiction.
+            <br /> <br />
+
+
+            <h3>18.Binding Arbitration.</h3>
+            <strong> 18.1.</strong> Arbitration Procedures. You and Julio Sales Group agree that, except as provided in
+            Section 18.4
+            below, all disputes, controversies and claims related to this ToU (each a “Claim”), shall be finally and
+            exclusively resolved by binding arbitration, which may be initiated by either party by sending a written
+            notice requesting arbitration to the other party. Any election to arbitrate by one party shall be final and
+            binding on the other. The arbitration will be conducted under the Streamlined Arbitration Rules and
+            Procedures of JAMS that are in effect at the time the arbitration is initiated (the “JAMS Rules”) and under
+            the terms set forth in this ToU. In the event of a conflict between the terms set forth in this Section 18
+            and the JAMS Rules, the terms in this Section 18 will control and prevail.
+            Except as otherwise set forth in Section 18.4, you may seek any remedies available to you under federal,
+            state or local laws in an arbitration action. As part of the arbitration, both you and Julio Sales Group
+            will have the opportunity for discovery of non-privileged information that is relevant to the Claim. The
+            arbitrator will provide a written statement of the arbitrator’s decision regarding the Claim, the award
+            given and the arbitrator’s findings and conclusions on which the arbitrator’s decision is based. The
+            determination of whether a Claim is subject to arbitration shall be governed by the Federal Arbitration Act
+            and determined by a court rather than an arbitrator. Except as otherwise provided in this ToU,
+            <br />
+            <strong> (a)</strong> you and
+            Julio Sales Group may litigate in court to compel arbitration, stay proceedings pending arbitration, or
+            confirm, modify, vacate or enter judgment on the award entered by the arbitrator; and
+            <br />
+            <strong> (b)</strong> the arbitrator’s
+            decision shall be final, binding on all parties and enforceable in any court that has jurisdiction, provided
+            that any award may be challenged if the arbitrator fails to follow applicable law.
+            <strong> BY AGREEING TO THIS ARBITRATION PROVISION, YOU UNDERSTAND THAT YOU AND JULIO SALES GROUP WAIVE THE
+                RIGHT TO
+                SUE IN COURT AND HAVE A JURY TRIAL.</strong>
+            <br />
+            <strong> 18.2.</strong> Location. The arbitration will take place in Cape Coral, Florida, unless the parties
+            agree to video,
+            phone and/or internet connection appearances.
+            <br />
+            <strong> 18.3.</strong> Limitations. You and Julio Sales Group agree that any arbitration shall be limited
+            to the Claim
+            between Julio Sales Group and you individually. YOU AND JULIO SALES GROUP AGREE THAT
+            <br />
+            <strong>
+                (a) THERE IS NO RIGHT
+                OR AUTHORITY FOR ANY DISPUTE TO BE ARBITRATED ON A CLASS-ACTION BASIS OR TO UTILIZE CLASS ACTION
+                PROCEDURES;
+                <br />
+                (b) THERE IS NO RIGHT OR AUTHORITY FOR ANY DISPUTE TO BE BROUGHT IN A PURPORTED
+                REPRESENTATIVE CAPACITY OR
+                AS A PRIVATE ATTORNEY GENERAL; AND
+                <br />
+                (c) NO ARBITRATION SHALL BE JOINED WITH ANY OTHER ARBITRATION.
+            </strong>
+            <br />
+            <strong> 18.4.</strong> Exceptions to Arbitration. You and Julio Sales Group agree that the following Claims
+            are not subject
+            to the above provisions concerning negotiations and binding arbitration:
+            <br />
+            <strong> (a)</strong> any Claim seeking to enforce or
+            protect, or concerning the validity of, any of your or Julio Sales Group’s intellectual property rights;
+            <br />
+            <strong> (b)</strong> any Claim related to, or arising from, allegations of theft, piracy, invasion of
+            privacy or unauthorized
+            use; and
+            <br />
+            <strong> (c)</strong> any claim for equitable relief. In addition to the foregoing, either party may assert
+            an
+            individual action in small claims court for Claims that are within the scope of such court’s jurisdiction in
+            lieu of arbitration.
+            <br />
+            <strong> 18.5.</strong> Arbitration Fees. If you initiate arbitration for a Claim, you will need to pay the
+            JAMS arbitration
+            initiation fee. If we are initiating arbitration for a Claim, we will pay all costs charged by JAMS for
+            initiating the arbitration. All other fees and costs of the arbitration will be charged pursuant to the JAMS
+            Rules.
+            <br />
+            <strong> 18.6.</strong> Severability. You and Julio Sales Group agree that if any portion this Section 18 is
+            found illegal or
+            unenforceable (except any portion of Section 18.4), that portion shall be severed and the remainder of the
+            Section shall be given full force and effect. If Section 18.4 is found to be illegal or unenforceable then
+            neither you nor Julio Sales Group will elect to arbitrate any Claim falling within that portion of Section
+            18.4 found to be illegal or unenforceable and such Claim shall be exclusively decided by a court of
+            competent jurisdiction within the County of Cape Coral, State of Florida, United States of America, and you
+            and Julio Sales Group agree to submit to the personal jurisdiction of that court.
+            <br /><br />
+
+
+
+
+            <h3>19. General.</h3>
+            <strong> 19.1.</strong> ToU Revisions. This ToU may only be revised in a writing signed by Julio Sales
+            Group, or published by
+            Julio Sales Group on the Site.
+            <br />
+            <strong> 19.2.</strong> No Partnership. You agree that no joint venture, partnership, employment, or agency
+            relationship
+            exists between you and Julio Sales Group as a result of this ToU or your use of the Site or the Service.
+            <br />
+            <strong> 19.3.</strong> Assignment. Julio Sales Group may assign its rights under this ToU to any person or
+            entity without
+            your consent. The rights granted to you under this ToU may not be assigned without Julio Sales Group’s prior
+            written consent, and any attempted unauthorized assignment by you shall be null and void.
+            <br />
+            <strong> 19.4.</strong> Severability. If any part of this ToU is determined to be invalid or unenforceable,
+            then that portion
+            shall be severed, and the remainder of the ToU shall be given full force and effect.
+            <br />
+            <strong> 19.5.</strong> Attorneys’ Fees. In the event any litigation or arbitration is brought by either
+            party in connection
+            with this ToU, the prevailing party shall be entitled to recover from the other party all the reasonable
+            costs, attorneys’ fees and other expenses incurred by such prevailing party in the litigation.
+            <br />
+            <strong> 19.6.</strong> No Waiver. Our failure to enforce any provision of this ToU shall in no way be
+            construed to be a
+            present or future waiver of such provision, nor in any way affect our right to enforce the same provision at
+            a later time. An express waiver by Julio Sales Group of any provision, condition or requirement of this ToU
+            shall not be understood as a waiver of your obligation to comply with the same provision, condition or
+            requirement at a later time.
+            <br />
+            <strong> 19.7.</strong> Notices. All notices given by you or required under this ToU shall be in writing and
+            sent to:
+            <a href="mailto:julio@juliosalesgroup.com">julio@juliosalesgroup.com</a>
+            <br />
+            <strong> 19.8.</strong>Export Administration. You must comply with all export laws and regulations of the
+            United States or
+            any other country (“Export Controls”) and you shall not export, direct or transfer any portion of the Site
+            or the Service, or any direct product thereof, to any destination, person or entity restricted or prohibited
+            by the Export Controls.
+            <br />
+            <strong> 19.9.</strong>Equitable Remedies. You acknowledge and agree that Julio Sales Group would be
+            irreparably damaged if
+            the terms of this ToU were not specifically enforced, and therefore you agree that we shall be entitled,
+            without bond, other security, or proof of damages, to appropriate equitable remedies with respect to
+            breaches of this ToU, in addition to such other remedies as we may otherwise have available to us under
+            applicable laws.
+            <br />
+            <strong> 19.10.</strong>Entire Agreement. This ToU, including the documents referenced in this ToU,
+            constitutes the entire
+            agreement between you and Julio Sales Group with respect to the Site and the Service and supersedes any and
+            all prior agreements between you and Julio Sales Group relating to the Site and/or the Service.
+            <br /><br />
+
+
+
+            <h3> 20. Privacy Policy.</h3>
+            <strong> 20.1</strong> Privacy Policy Agreement. You must read and agree to this ToU and the supporting
+            Privacy Policy to use
+            the App, the Site and/or the Service. By using the App, the Site and/or the Service, you represent that you
+            have read and consent to our Privacy Policy in addition to this ToU and agree with their content. Julio
+            Sales Group may revise the Privacy Policy at any time and the new versions will be posted on the App or the
+            Site. If at any point you do not agree to any portion of the Privacy Policy, you must immediately stop using
+            the App, the Site and the Service. By suing the App, the Site and/or the Service, you agree to the then
+            current versions of the ToU and Privacy Policy, which will be posted on the App or the Site.
+            <br />
+            <strong> 20.2.</strong> 3rd Party Tracking. The Julio Sales Group website uses cookies, tracking pixels and
+            related
+            technologies. Cookies are small data files that are served and stored on your device. Our site uses cookies
+            dropped by us or third parties for a variety of purposes including to operate and personalize the website.
+            Also, cookies may also be used to track how you use the site to target ads to you on other website.
+            20.3 Option to Opt-Out. You have an option to opt-out of receiving targeted advertising by visiting
+            <a href="http://www.aboutads.info">www.aboutads.info</a> or the NAI opt-out site at <a
+                href="http://www.networkadvertising.org/choices">networkadvertising.org/choices</a>.
+            For users in Europe, the EDAA
+            opt out site can be found at <a href="http://www.youronlinechoices.eu">youronlinechoices.eu</a>.
+            <br /><br />
+
+            <h3>21. Products Policy.</h3>
+            You may purchase products through the App, the Site and/or the Service by placing an
+            order. By placing an order through the App, the Site and/or the Service, you represent that you have read
+            and consent to our Shipping, Warranty and Return Policies and our Limited Warranty (collectively, the
+            “Product Policies”) in addition to this ToU. The Company may revise any of the Product Policies at any time
+            and the new versions will be posted on the Site.
+            <br /><br /><br /><br />
+
+
+
+
+            <h2>JULIO SALES GROUP LLC PRIVACY POLICY</h2>
+            <br />
+            <H3><i>Our Privacy Commitment</i> </H3>
+            Julio Sales Group LLC(<strong>“Company,”“we,” “us” or “our”</strong>) is committed to respecting the privacy
+            rights and
+            concerns of all users of the Company website and <a href="http://www.delphivim.com">www.delphivim.com</a>
+            mobile application where this Privacy
+            Policy is posted (individually and collectively, the <strong>“Site”</strong>) (we refer to the Site and the
+            services made
+            available through the Site and the mobile application, collectively, as the <strong>“Company
+                Features”</strong>). As
+            such, we
+            have established and implemented this Privacy Policy to inform users of the Company Features how we
+            use and
+            protect the information we collect through the Site and the Company Features. By accessing the Site
+            or using
+            any of the Company Features, you consent to Company’s collection, use, storage, deletion and
+            disclosure of
+            information relating to you as set forth in this Privacy Policy. This Privacy Policy is effective as
+            of the
+            date set forth above and is only applicable to the Site and not to any other website or mobile
+            application
+            that you may be able to access from the Site which may have its own data collection and use
+            practices and
+            policies.
+            This policy answers the following questions:
+            <br />
+            <strong>•</strong> What information do we collect about you and how do we use it?
+            <br />
+            <strong>•</strong> Will we share your personal information with third parties?
+            <br />
+            <strong>•</strong> What choices do you have about the collection and use of your personal
+            information?
+            <br />
+            <strong>•</strong> What security measures do we take to safeguard your personal information?
+            <br /><br />
+
+
+
+            <h3> <u> <i> What information do we collect about you and how do we use it?</i></u></h3>
+            <h3> Types of Information We Collect</h3>
+            Personal information means information that can be used to identify and contact you. You do not need
+            to submit personal information to access certain areas of the Site, but if you do not want to
+            disclose certain personal information to us, you will not be able to access certain aspects of the
+            Company Features.
+            <br />
+            We collect personal information when you create an account through the Company Features; participate
+            in registration forms, feedback forms, order forms or surveys; evaluate the operation of our
+            products and improve them; or receive customer or technical support.
+            <br />
+            To create an account for the Company Features, we may require you to provide certain information to
+            create your profile, including your name, password, email address, mailing address and phone number.
+            Providing additional information beyond what is required to create an account, such as granting us
+            access your mobile device’s address book and/or providing photos, your age, gender and marital
+            status, is entirely optional, but may enable you to gain more from the Company Features. We may also
+            collect financial qualification and billing information, such as billing name and address and
+            credit/debit card information. For example, the Company may collect personal information submitted
+            through online registration and/or feedback forms, contests, surveys, chat rooms, purchase order
+            forms or through communications with the Company.
+            <br />
+            Through the Company Features, you may be able to link to technology, software and services owned and
+            controlled by third parties (the<strong> “Third Party Features”</strong>). You may be permitted or
+            required to submit
+            personal information to access Third Party Features. Such use of Third Party Features and submission
+            of information through Third Party Features will be subject to such applicable third party’s terms
+            of use, terms of service and/or privacy policy. You agree to look solely to the applicable third
+            party and not to the Company to enforce your rights in relation thereto.
+            <br />
+            By submitting personal information through the Site, you authorize the Company to share this
+            personal information for the purposes identified herein and on the Site, such as responding to user
+            inquiries and processing transactions.
+            <br /><br />
+
+
+            <h3> How We Use Your Personal Information</h3>
+            The personal information you provide to us will allow us to alert you of new products or services,
+            features, or enhancements; handle your customer service questions or issues; provide for order
+            processing; request feedback; distribute newsletters; and notify you of promotions, contests,
+            surveys updates, or special offers that we think may interest you. We may also use your email
+            address as part of the Company Features in sending you messages about the Company Features and other
+            general announcements. Additionally, personal information you make public may be viewable by other
+            users of the Site.
+            <br />
+            We keep track of your interactions with us, including but not limited to your activity within the
+            Company Features. Except as set forth in this Privacy Policy, or unless we have your consent, we
+            will not share your personal information with any person or entity other than those affiliated with
+            the Company, entities acting on behalf of the Company and relevant third parties such as those
+            needed to complete a transaction, collect and maintain our information collection servers, and
+            perform technology, support and related services. We may use personal information that you provide
+            to us to send messages to you in response to your request to perform an activity in connection with
+            your use of any of the Company Features. We may also use your personal information to contact you
+            when necessary.
+            <br /> <br />
+
+
+            <h3> Cookies</h3>
+            “Cookies” are small bits of electronic information that a website sends to a visitor’s browser and
+            are stored on the visitor’s hard drive. We may employ cookies in certain areas of the Site or
+            Company Features to allow us to provide information to make your online experience more convenient.
+            While the Company may use cookies to track your visit to the Site or use of the Company Features,
+            this information does not identify you personally and you remain anonymous, even if you have
+            previously submitted personal information to the Company through the Site or otherwise. Third
+            parties whose websites are accessible through links on the Site may also use their own cookies when
+            you link to their site or service. The Company does not control these third parties’ use of cookies
+            and cannot guarantee that they will uphold the same privacy standards as the Company. The Company
+            expressly disclaims any and all liability related to the collection, use or disclosure of
+            information by third parties. You should review the privacy policies of any third-party sites that
+            you visit through a link from the Site to understand how these third parties use cookies and the
+            information they collect through cookies. Most cookies are “session cookies” which means that they
+            are automatically deleted at the end of each session. Most browsers are initially set to accept
+            cookies. You can set your browser to notify you when you receive a cookie, giving you a chance to
+            decide whether or not to accept it.
+            <br /> <br />
+
+            <h3> Do Not Track</h3>
+            The Company’s practices in responding to “do not track signals and collecting user information over
+            time and across a network of websites when you visit the Site are described below. We honor the
+            request of “do not track” signals sent by your browser when you visit the Site. Additionally, the
+            Company does not collect user information about your online activities over time and across
+            different websites or authorize third parties to do so.
+            <br /> <br />
+
+
+            <h3> Google and Facebook Analytics</h3>
+            The Site uses or will use Google Analytics, Facebook Analytics, or a similar service or services to
+            help us learn about who visits the Site and what pages are being viewed, and what Company Features
+            are being used and how.
+            <br /> <br />
+
+
+            <h3> Log Information</h3>
+            Our servers and analytics referenced above may automatically record information that your browser or
+            app sends whenever you visit the Site or use the Company Features. This information includes your
+            Internet Protocol address and browser type, which Company Features you use and from where, and when
+            and how long you use them (the “Tracking Technology”). We use this information to monitor and
+            analyze how users use the Company Features, to provide customer service and to maintain and improve
+            the Company Features.
+            <br /> <br />
+
+
+            <h3> Children’s Privacy</h3>
+            We do not knowingly collect personal information from children under 13. We take children’s privacy
+            seriously and encourage parents to play an active role in their children’s online experience at all
+            times.
+            <br /> <br />
+
+
+            <h3><u><i> Will we share your personal information with third parties?</i></u></h3>
+            <h3> Sharing of Information</h3>
+            We use your personal information to respond to your requests and send communications to you about
+            promotions, updates, or special offers (which may be offered by the Company or one of its business
+            partners) that may be of interest to you. We may share your personal information with carefully
+            selected vendors and business partners, including companies that perform marketing services and
+            other business operations for us, under strict terms described below. In addition, we will share the
+            personal information we collect from you under the following circumstances:
+            <br />
+            <strong> •</strong> Protection of rights. We will share personal information if we have a good faith
+            belief that
+            <br />
+            <strong>(i)</strong>
+            access, use, preservation or disclosure of such information is reasonably necessary to satisfy any
+            applicable law, regulation, legal process, such as a court order or subpoena, or a request by law
+            enforcement or governmental authorities,
+            <br />
+            <strong> (ii)</strong> such action is appropriate to enforce our Terms of Use
+            for the Company Features, including any investigation of potential violations thereof,
+            <br />
+            <strong>(iii) </strong>such
+            action is necessary to detect, prevent, or otherwise address fraud, security or technical issues
+            associated with the Company Features, or
+            <br />
+            <strong>(iv) </strong>such action is appropriate to protect the rights,
+            property or safety of the Company, its employees, users of the Company Features or others.
+            <br />
+            <strong> •</strong> Asset transfers. If we become involved in a merger, acquisition or other
+            transaction involving the sale of some or all of the Company’s assets, user information,
+            including personal information collected from you through your use of the Company Features,
+            could be included in the transferred assets. Should such an event occur, we will use reasonable
+            means to notify you through email and/or a prominent notice on the Site.
+            <br />
+            <strong> •</strong> Service Providers. We may share your personal information with service providers
+            that we
+            engage
+            for the purpose of processing information on our and your behalf. For example, we may partner with
+            other companies to process payments for the Company Features. While providing services for us, these
+            companies may access your personal information. To the extent applicable, we require these entities
+            to comply with this Privacy Policy and appropriate confidentiality and security measures.
+            <br /><br />
+
+
+            <h3> Additional Information You Should Know About Third Parties</h3>
+            The Site may contain direct links to websites operated by our business partners and other
+            third-party entities. These third-party websites may collect information about you when you visit
+            them or otherwise communicate with them. This Privacy Policy does not cover the information
+            practices of third party websites linked to the Site or accessible through the Company Features.
+            Although we encourage such third parties to adopt and follow their own privacy policies, we are not
+            responsible for their collection and use of your personal information. You should refer to the
+            privacy policies and statements of other websites or contact the respective webmasters of those
+            websites to obtain information regarding their information collection, use and disclosure policies.
+            <br />
+            When you have clicked on a third-party logo or URL displayed on our Site or accessible through the
+            Company Features which links you to a different website, our Privacy Policy no longer applies and
+            you must read the privacy policy of the third party to see how your personal information will be
+            handled on their website.
+            <br /><br />
+
+
+
+            <h3><u><i>What choices do you have about the collection and use of your personal
+                        information?</i></u></h3>
+            <h3>Control of Your Information</h3>
+            You may update or delete your personal information or modify your account preferences for the
+            Company Features by emailing <a href="mailto:julio@juliosalesgroup.com">julio@juliosalesgroup.com</a> or by
+            following the
+            prompts provided through
+            the account interface on the Site.
+            <br /><br />
+
+            <h3>Opting Out of Receiving Communications from Us</h3>
+            n the event that we send communications to you via email and you no longer want to receive our
+            emails or other announcements, you may opt-out by clicking the opt-out box provided through the
+            account interface on the Site or replying to the email and indicating “unsubscribe” in the subject
+            line. Please note that you cannot unsubscribe from certain correspondence from us that is necessary
+            to administer your account, including messages relating to your account transactions.
+            <br /><br />
+
+            <h3>Mediation</h3>
+            If you are a resident of a country outside of the European Union, you also agree that, in the event
+            any dispute or claim arises out of or relating to this Privacy Policy that you and the Company will
+            attempt in good faith to negotiate a written resolution of the matter directly between the parties.
+            If you reside in the United States, you agree that if the matter remains unresolved for forty-five
+            (45) days after notification (via certified mail or personal delivery) that a dispute exists, all
+            parties shall join in mediation services in Cape Coral, Florida with a mutually agreed mediator in
+            an attempt to resolve the dispute. Should you file any arbitration claims, or any administrative or
+            legal actions without first having attempted to resolve the matter by mediation, then you agree that
+            you will not be entitled to recover attorneys’ fees, even if you would otherwise be entitled to
+            them.
+            <br /><br />
+
+            <h3>Dispute Resolution for Residents of the European Union</h3>
+            If you are a resident of the European Union, in the event that you have any dispute or claim arising
+            out of or relating to this Privacy Policy, you may report your claim to the European Union Data
+            Protection Authorities located in your jurisdiction.
+            <br /><br />
+
+
+            <h3><u><i>What security measures do we take to safeguard your personal information?</i></u></h3>
+            The personal information that you provide to us is stored on servers, which are located in secured
+            facilities and protected by protocols and procedures designed to ensure the security of such
+            information. In addition, we restrict access to personal information to Company employees and agents
+            who need to know this information in order to develop, operate and maintain the Company Features.
+            However, no server, computer or communications network or system, or data transmission over the
+            Internet can be guaranteed to be 100% secure. As a result, while we strive to protect user
+            information, we cannot ensure or warrant the security of any information you transmit to us or
+            through the use of any of the Company Features and you acknowledge and agree that you provide such
+            information and engage in such transmissions at your own risk. Once we receive a transmission from
+            you, we will endeavor to maintain its security on our systems.
+            <br /><br />
+
+
+
+            <h3><u><i>Notification of Changes</i></u></h3>
+            This Privacy Policy may change from time to time and we will post all changes on the Site.
+            <br /><br />
+
+            <h3><u><i> Questions? Contact Us</i></u></h3>
+            If you have any questions about our privacy practices or this Privacy Policy, please contact us by
+            email at <a href="julio@juliosalesgroup.com">julio@juliosalesgroup.com</a>
+            <br /><br />
+
+            <h3><u><i> Terms of Use</i></u></h3>
+            Please read the Terms of Use governing the use of the Site and the Company Features.
+            <br /><br />
+
+        </div>
+    </div>
+</body>
+
+</html>
