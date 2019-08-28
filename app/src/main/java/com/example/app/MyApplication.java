@@ -1,7 +1,9 @@
 package com.example.app;
 
 import android.app.Application;
+import android.content.Context;
 import android.graphics.Typeface;
+import android.support.multidex.MultiDex;
 
 import com.example.app_common.AppCommonModule;
 import com.sxjs.common.CommonModule;
@@ -19,6 +21,12 @@ public class MyApplication extends Application {
         super.onCreate();
         AppCommonModule.init(this);
         CommonModule.init(this);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     @Override

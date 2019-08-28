@@ -1,15 +1,18 @@
 package com.sxjs.jd.composition.main.cartfragment;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sxjs.common.base.BaseFragment;
@@ -46,10 +49,25 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 
 	@BindView(R2.id.find_recyclerview)
 	RecyclerView cartRecyclerView;
+	@BindView(R2.id.tv_cart_title)
+	TextView tvCartTitle;
+
 	@BindView(R2.id.ll_bar)
 	LinearLayout llBar;
+	@BindView(R2.id.rl_cart_head)
+	RelativeLayout cartHead;
+
+
 	@BindView(R2.id.find_pull_refresh_header)
 	JDHeaderView findPullRefreshHeader;
+
+//	private int tempY;
+
+	int barStatusBarHeight = 45;//假设状态栏高度
+	int titleHeight = 45;//假设title高度
+	int hgt = 190 - barStatusBarHeight - titleHeight;//假设特别背景高度250
+	int distance = 0;
+
 
 	private CartsStoreListAdapter adapter;
 	private CartsEntity cartData;
@@ -69,6 +87,7 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 		return view;
 	}
 
+
 	private void initView() {
 		DaggerCartFragmentComponent.builder()
 				.appComponent(getAppComponent())
@@ -84,7 +103,73 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 		cartRecyclerView.setAdapter(adapter);
 		//RecycleView添加悬浮布局
 		initDecoration();
+
+		final RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) cartHead.getLayoutParams();
+		cartHead.post(new Runnable() {
+			@Override
+			public void run() {
+				int height = cartHead.getHeight();
+				Log.d(TAG, "initView() returned: " + height);
+			}
+		});
+// params.setMargins(dip2px(MainActivity.this, 1), 0, 0, 0); // 可以实现设置位置信息，如居左距离，其它类推  
+// params.leftMargin = dip2px(MainActivity.this, 1);  
+//		params.height = dip2px( height);
+//		cartHead.setLayoutParams(params);
+
+		cartRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+
+			@Override
+			public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+				super.onScrollStateChanged(recyclerView, newState);
+			}
+
+			@Override
+			public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+				super.onScrolled(recyclerView, dx, dy);
+//				tempY += dy;
+				distance += dy;
+				//上下滑动的时候背景变
+				if (distance <= hgt) {
+//					params.height = (140 - (dip2px(distance) / 5));
+					((View) cartHead.getParent()).setScrollY(distance);
+//					cartHead.offsetTopAndBottom(-distance);
+					Log.e(TAG, "onScrolled:======11--------- " + (140 - (dip2px(distance) / 5)));
+				} else if (distance > hgt) {
+					((View) cartHead.getParent()).setScrollY(hgt);
+//					cartHead.offsetTopAndBottom(-hgt);
+//					params.height = 80 /*+ (dip2px(hgt) / 4)*/;
+					Log.e(TAG, "onScrolled:======22--------- ");
+				}
+				LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+				int firstCompletelyVisibleItemPosition = layoutManager.findFirstCompletelyVisibleItemPosition();
+				if (firstCompletelyVisibleItemPosition == 0) {
+					distance = 0;
+					((View) cartHead.getParent()).setScrollY(distance);
+
+				}
+//				cartHead.setLayoutParams(params);
+//				lp.topMargin = cartHead.getTop() + tempY;
+//				cartHead.setLayoutParams(lp);
+//				Log.i(TAG, "onScrolled: " + dy + " ==== tempY: ==== " + distance);
+			}
+		});
 	}
+
+
+	/**
+	 *  
+	 *      * dp转为px 
+	 *      * @param context  上下文 
+	 *      * @param dipValue dp值 
+	 *      * @return 
+	 *      
+	 */
+	public int dip2px(float dipValue) {
+		Resources resources = getContext().getResources();
+		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dipValue, resources.getDisplayMetrics());
+	}
+
 
 	/**
 	 * 添加悬浮布局
@@ -178,7 +263,7 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 //				} else {
 //					cartPresenter.getMyCartMoreData();
 //				}
-					adapter.loadMoreEnd(false);
+				adapter.loadMoreEnd(false);
 			}
 		}, 1000);
 	}

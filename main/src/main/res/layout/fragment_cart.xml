@@ -3,6 +3,8 @@
               xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
               android:orientation="vertical">
 
     <include
@@ -11,43 +13,86 @@
 
     <RelativeLayout
         android:id="@+id/rl_cart_heading"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_cart_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="64dp"
-            android:layout_height="32dp"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:text="购物车"
-            android:textColor="@color/black_font"
-            android:textStyle="bold"
-            />
+            <TextView
+                android:id="@+id/tv_cart_title"
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="@color/black_font"
+                android:textStyle="bold"
+                />
 
-        <ImageView
-            android:id="@+id/advisory_img"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:src="@drawable/ic_more_horiz_black_24dp"/>
+            <ImageView
+                android:id="@+id/advisory_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_more_horiz_black_24dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/advisory_img"
-            android:padding="10dp"
-            android:text="编辑"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/advisory_img"
+                android:padding="10dp"
+                android:text="编辑"
+                />
 
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rl_cart_head"
+            android:background="@color/search_corner_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部"
+                android:textSize="@dimen/font13"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="降价"
+                android:textSize="@dimen/font13"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/x80"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分类"
+                android:textSize="@dimen/font13"/>
+
+        </LinearLayout>
     </RelativeLayout>
-
+    <!--</RelativeLayout>-->
 
     <com.sxjs.common.widget.headerview.JDHeaderView
         android:id="@+id/find_pull_refresh_header"
