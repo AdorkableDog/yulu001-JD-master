@@ -3,6 +3,7 @@ package com.sxjs.common.util;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.DisplayMetrics;
@@ -216,5 +217,18 @@ public class Utils {
             }
             activity.getWindow().getDecorView().findViewById(android.R.id.content).setPadding(0, 0, 0, Utils.navigationHeight);
         }
+    }
+
+    public static int getToolbarHeight(Context context) {
+        final TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(
+                new int[]{R.attr.actionBarSize});
+        int toolbarHeight = (int) styledAttributes.getDimension(0, 0);
+        styledAttributes.recycle();
+
+        return toolbarHeight;
+    }
+
+    public static int getTabsHeight(Context context) {
+        return (int) context.getResources().getDimension(R.dimen.tabsHeight);
     }
 }

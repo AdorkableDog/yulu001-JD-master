@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.example.app_common.service.ITestService;
+import com.sxjs.app_common.service.ITestService;
 import com.sxjs.common.base.BaseFragment;
 import com.sxjs.jd.R;
 import com.sxjs.jd.R2;

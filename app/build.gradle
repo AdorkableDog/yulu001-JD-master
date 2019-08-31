@@ -18,7 +18,7 @@ android {
             }
         }
 
-        def isBuildAll = (buildMain as boolean) && (buildTest as boolean)
+        def isBuildAll = (buildMain as boolean) && (buildTest as boolean) &&(buildSearch as boolean)
 
         buildConfigField 'boolean','DEBUG_ALL',isBuildAll.toString()
         lintOptions{
@@ -77,5 +77,11 @@ dependencies {
     if(project.buildTest as boolean){
         implementation project(':testmodule')
     }
+
+    if(project.buildSearch as boolean){
+        implementation project(':search')
+    }
+
+
     api project(':app_common')
 }

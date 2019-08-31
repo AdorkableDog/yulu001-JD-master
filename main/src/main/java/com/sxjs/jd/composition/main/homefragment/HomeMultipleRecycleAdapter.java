@@ -23,6 +23,7 @@ import com.sxjs.jd.R;
 import com.sxjs.jd.R2;
 import com.sxjs.jd.data.Constant;
 import com.sxjs.jd.entities.HomeIndex;
+import com.sxjs.jd.entities.Test;
 
 
 /**
@@ -384,6 +385,11 @@ public class HomeMultipleRecycleAdapter extends BaseMultiItemQuickAdapter<HomeIn
 		helper.addOnClickListener(R.id.icon_list_one);
 		helper.addOnClickListener(R.id.icon_list_one_title);
 		setOnItemChildClickListener(this);
+
+		helper.addOnClickListener(R.id.icon_list_two);
+		helper.addOnClickListener(R.id.icon_list_two_title);
+		setOnItemChildClickListener(this);
+
 		helper.setText(R.id.icon_list_two_title, item.itemContentList.get(1).itemTitle);
 		helper.setText(R.id.icon_list_three_title, item.itemContentList.get(2).itemTitle);
 		helper.setText(R.id.icon_list_four_title, item.itemContentList.get(3).itemTitle);
@@ -477,6 +483,13 @@ public class HomeMultipleRecycleAdapter extends BaseMultiItemQuickAdapter<HomeIn
 		int id = view.getId();
 		if (id == R.id.icon_list_one) {
 			ARouter.getInstance().build("/test1/activity").navigation(view.getContext());
+		} else if (id == R.id.icon_list_two) {
+			ARouter.getInstance()
+					.build("/search/activity")
+					.withString("name", "adnroid")
+					.withInt("age", 2)
+					.withParcelable("test", new Test("test", 2))
+					.navigation();
 		}
 		return false;
 	}

@@ -26,13 +26,15 @@
             <TextView
                 android:id="@+id/tv_classList_title"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/x30"
+
                 android:maxLines="1"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:text="完全圆形圆角"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:paddingBottom="@dimen/x30"
+                android:paddingTop="@dimen/x30"
+                android:text=""
+                android:textColor="#000000"/>
 
             <com.sxjs.common.widget.WrapContentGridView
                 android:id="@+id/classify_content_gridview"

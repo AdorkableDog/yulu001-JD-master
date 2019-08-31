@@ -56,7 +56,7 @@ public class ClassicIconRecycleAdapter extends BaseMultiItemQuickAdapter<ClassIn
 //		 helper.getView(R.id.tv_classList_title).setText();
 		int size = item.classList.productClassifys.size();
 		Log.i(TAG, "bindIconListData: " + position + "size : " + size);
-//		helper.setText(R.id.tv_classList_title, item.listTitle);
+		helper.setText(R.id.tv_classList_title, item.listTitle);
 		gridView = helper.getView(R.id.classify_content_gridview);
 		adapter = new ClassifyContentGoodsAdapter(mContext);
 		adapter.setData(item.classList.productClassifys);

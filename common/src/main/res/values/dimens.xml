@@ -92,6 +92,8 @@
     <dimen name="font36">36sp</dimen>
     <dimen name="font55">55sp</dimen>
 
+    <dimen name="tabsHeight">48dp</dimen>
+
 
 
 </resources>

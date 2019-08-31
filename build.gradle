@@ -60,4 +60,5 @@ ext {
     //控制模块是否参与编译
     buildMain = true
     buildTest = true
+    buildSearch = true
 }

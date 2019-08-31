@@ -3,7 +3,7 @@ package com.sxjs.testmodule;
 import android.content.Context;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.example.app_common.service.ITestService;
+import com.sxjs.app_common.service.ITestService;
 
 /**
  * @author liuxiaodong
