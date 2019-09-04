@@ -42,6 +42,7 @@ public class TestActivity extends BaseActivity implements View.OnClickListener, 
         ImageLoaderUtil.getInstance(expandImg)
                 .setOverlayImage(getResources().getDrawable(R.drawable.over))
                 .setRoundingParams(10);
+        setToolBarColor(this,false);
     }
 
 

@@ -5,6 +5,8 @@
     <color name="dialog_bg">#aa333333</color>
     <color name="no_network_bg">#333333</color>
     <color name="search_corner_bg">#c6d1d1d1</color>
+    <color name="search_corner_bg_ray_white">#e0efefef</color>
+    <color name="search_corner_bg_ray_white2">#e0636363</color>
     <color name="color_transparent">#00ffffff</color>
 
     <color name="default_shadow_color">#88757575</color>

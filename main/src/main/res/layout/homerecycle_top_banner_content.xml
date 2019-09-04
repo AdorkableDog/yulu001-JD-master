@@ -9,8 +9,8 @@
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/sdv_item_fresco_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:actualImageScaleType="fitXY"
-        app:viewAspectRatio="2.32"
         app:placeholderImage="@drawable/holder_img"/>
+        <!--app:viewAspectRatio="2.32"-->
 </FrameLayout>

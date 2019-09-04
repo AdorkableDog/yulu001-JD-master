@@ -1,1 +1,1 @@
-include ':main', ':common', ':testmodule', ':app_common', ':app', ':search'
+include ':main', ':common', ':testmodule', ':app_common', ':app', ':search', ':stacklabelview'
