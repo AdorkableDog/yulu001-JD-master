@@ -7,4 +7,9 @@
     <color name="lineColor">#11333333</color>
     <color name="black_font">#bb000000</color>
     <color name="black_bg">#66333333</color>
+
+    <color name="CF1_F4_F6">#F1F4F6</color>
+    <color name="C85_85_85">#858585</color>
+    <color name="C10_10_10">#101010</color>
+    <color name="CE8_3C_3C">#101010</color>
 </resources>

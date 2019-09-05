@@ -210,7 +210,6 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 				}
 				return null;
 			}
-
 			@Override
 			public View getGroupView(int position) {
 				//获取自定义的组数据
@@ -235,7 +234,6 @@ public class CartFragment extends BaseFragment implements CartContract.View, Ptr
 	@Override
 	public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-
 	}
 
 	/**

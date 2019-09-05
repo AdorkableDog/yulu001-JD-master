@@ -27,10 +27,12 @@ public class CartsStoreListAdapter extends BaseQuickAdapter<CartsEntity.DataBean
 
 		((RecyclerView) helper.getView(R.id.gridView)).setLayoutManager(
 				new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
+
 		CartGoodsDetailAdapter cartGoodsDetailAdapter = new
 				CartGoodsDetailAdapter(
 				R.layout.item_cart_recyclerview_item,
 				bean.getShopProArray());
+
 		((RecyclerView) helper.getView(R.id.gridView)).setAdapter(cartGoodsDetailAdapter);
 
 //        helper.setText(R.id.author_name , bean.authorName);
